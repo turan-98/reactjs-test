@@ -1,5 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { TodoContext } from '../../../../contexts/todo.context';
+import styles from '../../../../css/style.css'
+
 
 export default function TodoHeader() {
 
@@ -15,8 +17,8 @@ export default function TodoHeader() {
         <div>
             <p>Lista de Atividades</p>
             <div >
-                <input type="text" onChange={(e) => { setTodo(e.target.value) }} placeholder="digite para filtrar"></input>
-                <button class="btn btn-primary m-4" type="button" onClick={(e) => handleAddTodo(e)}>Adicionar</button>
+                <input type="text" class="input-list" onChange={(e) => { setTodo(e.target.value) }} placeholder="digite para filtrar"></input>
+                <button class="btn btn-primary m-4 btn-click" type="button" onClick={(e) => handleAddTodo(e)}>Adicionar</button>
             </div>
         </div>
     )
