@@ -16,7 +16,7 @@ export default function TodoHeader() {
             <p>Lista de Atividades</p>
             <div >
                 <input type="text" onChange={(e) => { setTodo(e.target.value) }} placeholder="digite para filtrar"></input>
-                <button type="button" onClick={(e) => handleAddTodo(e)}>Adicionar</button>
+                <button class="btn btn-primary m-4" type="button" onClick={(e) => handleAddTodo(e)}>Adicionar</button>
             </div>
         </div>
     )
